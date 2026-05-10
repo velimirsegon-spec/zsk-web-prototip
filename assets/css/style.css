@@ -109,6 +109,57 @@ h3 { font-size: 1.1rem; margin: 1.25rem 0 .5rem; color: var(--zsk-green-dark); }
 .hero h1 { margin-bottom: .75rem; }
 .hero p { margin: 0; max-width: 65ch; color: var(--text-muted); font-size: 1.1rem; }
 
+/* Hero image (banner above hero block) */
+.hero-image {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+}
+.hero-image figcaption {
+  padding: .65rem 1rem;
+  background: var(--surface);
+  font-size: .9rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+.gallery figure {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.gallery figcaption {
+  padding: .65rem .85rem;
+  font-size: .9rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
 /* Card grid (homepage tiles) */
 .tiles {
   display: grid;
